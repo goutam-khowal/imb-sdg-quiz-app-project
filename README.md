@@ -2,8 +2,6 @@
 
 An interactive, educational single-page application (SPA) focused on **SDG Goal 2: Zero Hunger**. This Next.js project aims to raise awareness about global hunger issues and engage users through interactive learning experiences.
 
-![Zero Hunger Banner](https://via.placeholder.com/800x400/4ade80/ffffff?text=Zero+Hunger+Interactive+Website)
-
 ## 🌟 Problem It Solves
 
 ### The Challenge
@@ -96,7 +94,7 @@ This interactive website addresses the challenge by:
 ├── app/
 │   ├── page.tsx          # Main page component (imports all components)
 │   ├── layout.tsx        # Root layout
-│   └── globals.css       # Global 
+│   └── globals.css       # Global
 ├── components/           # Individual component files
 │   ├── Navbar.tsx       # Navigation component with scroll effects
 │   ├── Hero.tsx         # Hero section with animations
