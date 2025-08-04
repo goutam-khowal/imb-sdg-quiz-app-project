@@ -1,14 +1,19 @@
 import { Award, CheckCircle, X } from "lucide-react";
 import { useState } from "react";
+interface Question {
+  question: string;
+  options: string[];
+  correct: number;
+}
 
-export const Quiz = () => {
+export const Quiz: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
 
-  const questions = [
+  const questions: Question[] = [
     {
       question: "What is the main goal of SDG 2: Zero Hunger?",
       options: [

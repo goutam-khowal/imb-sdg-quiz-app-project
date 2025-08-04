@@ -1,4 +1,21 @@
-export const FactCard = ({ icon: Icon, title, stat, description, color }) => {
+import React from "react";
+import { LucideIcon } from "lucide-react";
+
+interface FactCardProps {
+  icon: LucideIcon;
+  title: string;
+  stat: string;
+  description: string;
+  color: string;
+}
+
+export const FactCard: React.FC<FactCardProps> = ({
+  icon: Icon,
+  title,
+  stat,
+  description,
+  color,
+}) => {
   return (
     <div
       className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 ${color}`}
